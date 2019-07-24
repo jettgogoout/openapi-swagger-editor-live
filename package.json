@@ -1,0 +1,22 @@
+{
+  "name": "openapi-swagger-editor-live",
+  "version": "1.0.0",
+  "description": "Swagger editor that save automatically on yaml file",
+  "main": "index.js",
+  "repository": "git@gitlab.com:vmaillart/openapi-swagger-editor-live.git",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Valentine Maillart",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.20.0",
+    "express": "^4.17.1",
+    "open": "^6.4.0",
+    "path": "^0.12.7",
+    "swagger-editor-dist": "^3.6.31"
+  },
+  "bin": {
+    "openapi-swagger-editor-live": "bin/openapi-swagger-editor-live.js"
+  }
+}
