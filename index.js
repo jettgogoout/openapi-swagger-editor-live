@@ -30,6 +30,9 @@ function edit(swaggerFile, port, hostname, folder) {
   });
 
   app.get("/editor/spec", function(req, res) {
+    // Remove previous local storage to use the file instead
+    window.localStorage.removeItem("swagger-editor-content");
+    console.log("remove local storage");
     res.send(fs.readFileSync(swaggerFile));
   });
 
